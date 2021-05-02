@@ -4,7 +4,7 @@ using System.Text;
 
 namespace coffee_machine_project_kata.Domain
 {
-    class Recipe
+    public class Recipe
     {
         public static readonly Recipe EXPRESSO = new Recipe(new Product[] { Product.COFFEE, Product.WATER }, "Expresso");
 
@@ -23,6 +23,10 @@ namespace coffee_machine_project_kata.Domain
         {
             _products = products;
             Name = name;
+        }
+        public double GetPrice()
+        {
+            throw new NotImplementedException();
         }
 
     }
