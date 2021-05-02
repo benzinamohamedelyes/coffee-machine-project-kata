@@ -4,7 +4,7 @@ using System.Text;
 
 namespace coffee_machine_project_kata.Domain
 {
-    enum ProductType
+    public enum ProductType
     {
         Coffee = 0,
         Sugar = 1,

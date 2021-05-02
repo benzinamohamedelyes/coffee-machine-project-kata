@@ -4,7 +4,7 @@ using System.Text;
 
 namespace coffee_machine_project_kata.Domain
 {
-    abstract class BaseProduct
+    public abstract class BaseProduct
     {
         private ProductType _product;
         private double _price;

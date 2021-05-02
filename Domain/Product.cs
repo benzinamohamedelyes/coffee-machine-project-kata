@@ -4,7 +4,7 @@ using System.Text;
 
 namespace coffee_machine_project_kata.Domain
 {
-    class Product: BaseProduct
+    public class Product: BaseProduct
     {
         public static readonly Product COFFEE = new Product(ProductType.Coffee, 1);
         public static readonly Product SUGAR = new Product(ProductType.Sugar, 0.1);
