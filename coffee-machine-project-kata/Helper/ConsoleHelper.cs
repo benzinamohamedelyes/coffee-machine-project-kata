@@ -31,7 +31,7 @@ namespace coffee_machine_project_kata.Helper
                     if (i == currentSelection)
                         Console.ForegroundColor = ConsoleColor.Red;
 
-                    Console.Write(options[i].Value.Name);
+                    Console.WriteLine(options[i].Value.Name);
 
                     Console.ResetColor();
                 }

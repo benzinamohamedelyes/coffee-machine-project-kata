@@ -17,7 +17,7 @@ namespace coffee_machine_project_kata.Domain
 
         public static readonly Recipe TEA = new Recipe(new Product[] { Product.TEA, Product.WATER, Product.WATER }, "The");
 
-        IEnumerable<Product> _products;
+        Product[] _products;
         public string Name { get; }
         public Recipe(Product[] products, string name)
         {
@@ -26,7 +26,12 @@ namespace coffee_machine_project_kata.Domain
         }
         public double GetPrice()
         {
-            throw new NotImplementedException();
+            double price = 0;
+            for (int i = 0; i < _products.Length; i++)
+            {
+                price += _products[i].GetPrice();
+            }
+            return price + (price * 0.3);
         }
 
     }

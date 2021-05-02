@@ -11,32 +11,32 @@ namespace Tests
         public void ExpressoShouldHaveTheRightPrice()
         {
             var expresso = Recipe.EXPRESSO;
-            expresso.GetPrice().Should().Be(1.56);
+            Math.Round(expresso.GetPrice(), 2).Should().Be(1.56);
         }
         [Fact]
         public void LungoShouldHaveTheRightPrice()
         {
             var lungo = Recipe.LUNGO;
-            lungo.GetPrice().Should().Be(1.82);
+            Math.Round(lungo.GetPrice(), 2).Should().Be(1.82);
         }
         [Fact]
         public void CapuccinoShouldHaveTheRightPrice()
         {
             var capuccino = Recipe.CAPUCCINO;
-            capuccino.GetPrice().Should().Be(3.51);
+            Math.Round(capuccino.GetPrice(), 2).Should().Be(3.51);
         }
         [Fact]
         public void ChocolatShouldHaveTheRightPrice()
         {
             var chocolat = Recipe.CHOCOLAT;
-            chocolat.GetPrice().Should().Be(5.33);
+            Math.Round(chocolat.GetPrice(), 2).Should().Be(5.33);
         }
         [Fact]
         public void TeaShouldHaveTheRightPrice()
         {
             var tea = Recipe.TEA;
-            tea.GetPrice().Should().Be(5.72);
+            Math.Round(tea.GetPrice(), 2).Should().Be(3.12);
         }
-        
+
     }
 }

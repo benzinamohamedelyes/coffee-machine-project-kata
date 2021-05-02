@@ -12,9 +12,9 @@ namespace coffee_machine_project_kata
         static void Main(string[] args)
         {
             KeyValuePair<string, Recipe>[] availableBeverage = GetFieldValues(typeof(Recipe)).ToArray();
-           
             int index = ConsoleHelper.MultipleChoice(true, availableBeverage);
-            Console.WriteLine($"Le Prix de {availableBeverage[index].Value.Name} est de : {availableBeverage[index].Value.GetPrice()}");
+
+            Console.WriteLine($"Le Prix de {availableBeverage[index].Value.Name} est de : {Math.Round(availableBeverage[index].Value.GetPrice(), 2)}");
             Console.ReadKey();
         }
         public static Dictionary<string, Recipe> GetFieldValues(Type type)
